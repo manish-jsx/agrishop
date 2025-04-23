@@ -1,0 +1,401 @@
+{
+  "metadata": {
+    "title": "AgriShop - Your Complete Agriculture Solution",
+    "description": "Government approved agriculture shop providing fertilizers, seeds, pesticides, and gardening solutions."
+  },
+  "nav": {
+    "home": "Home",
+    "products": "Products",
+    "services": "Services",
+    "about": "About Us",
+    "contact": "Contact"
+  },
+  "languages": {
+    "en": "English",
+    "hi": "Hindi"
+  },
+  "hero": {
+    "badge": "Government Approved",
+    "title": "Your Complete Agriculture Solution",
+    "subtitle": "We provide high-quality fertilizers, seeds, pesticides, and gardening solutions for all your agricultural needs.",
+    "primaryButton": "Explore Products",
+    "secondaryButton": "Our Services",
+    "rating": "Trusted by thousands of farmers"
+  },
+  "approvalBanner": {
+    "text": "Government Approved & Licensed Agriculture Shop",
+    "license": "Licensed",
+    "approved": "Govt. Approved"
+  },
+  "sections": {
+    "products": "Our Products",
+    "productsDescription": "We offer a wide range of high-quality agricultural products to meet all your farming and gardening needs.",
+    "services": "Our Services",
+    "servicesDescription": "Professional services to help you achieve the best results in your agricultural endeavors.",
+    "about": "About AgriShop",
+    "contact": "Contact Us"
+  },
+  "products": {
+    "fertilizers": "Fertilizers",
+    "seeds": "Seeds",
+    "pesticides": "Pesticides & Herbicides",
+    "organic": "Organic Farming Materials"
+  },
+  "productDescriptions": {
+    "fertilizers": "High-quality fertilizers for all types of crops and plants.",
+    "seeds": "Hybrid, paddy, wheat, and fodder crop seeds.",
+    "pesticides": "Effective pesticides and herbicides for crop protection.",
+    "organic": "Organic manures and plant nutrition products."
+  },
+  "services": {
+    "terraceGarden": "Terrace Garden Setup",
+    "floristGardening": "Florist Gardening",
+    "homeVegetable": "Home Vegetable Farming",
+    "subsidized": "Subsidized Products"
+  },
+  "serviceDescriptions": {
+    "terraceGarden": "Complete solutions for setting up beautiful and productive terrace gardens.",
+    "floristGardening": "Specialized products and advice for florist gardening.",
+    "homeVegetable": "Everything you need to grow vegetables at home.",
+    "subsidized": "Government subsidized seeds and fertilizers."
+  },
+  "aboutSection": {
+    "paragraph1": "AgriShop is a government-approved and licensed agriculture shop dedicated to providing farmers and gardening enthusiasts with the best products and services.",
+    "paragraph2": "With years of experience in the agriculture industry, we understand the needs of farmers and provide tailored solutions.",
+    "features": [
+      "Government approved and licensed",
+      "Working with professional gardeners",
+      "Providing subsidized seeds and fertilizers",
+      "Supporting organic farming initiatives",
+      "Offering hybrid and high-yield seeds"
+    ]
+  },
+  "contactSection": {
+    "subtitle": "Have questions or need assistance? Contact us today!",
+    "phone": "Phone",
+    "email": "Email",
+    "address": "Address"
+  },
+  "footer": {
+    "about": "About AgriShop",
+    "aboutText": "Government approved agriculture shop providing complete farming and gardening solutions.",
+    "quickLinks": "Quick Links",
+    "products": "Products",
+    "categories": "Categories",
+    "newsletter": "Subscribe to Newsletter",
+    "newsletterText": "Stay updated with our latest products and offers.",
+    "subscribe": "Subscribe",
+    "emailPlaceholder": "Your email",
+    "copyright": "© 2024 AgriShop. All rights reserved."
+  },
+  "common": {
+    "viewDetails": "View Details",
+    "viewAll": "View All Products",
+    "learnMore": "Learn More"
+  },
+  "productsPage": {
+    "title": "Our Products",
+    "subtitle": "Explore our wide range of agricultural products for all your farming and gardening needs",
+    "searchPlaceholder": "Search products...",
+    "filter": "Filter",
+    "sort": "Sort",
+    "viewDetails": "View Details",
+    "categories": {
+      "tools": "Tools & Equipment",
+      "irrigation": "Irrigation Systems",
+      "hydroponics": "Hydroponics",
+      "greenhouse": "Greenhouse"
+    },
+    "badges": {
+      "bestseller": "Bestseller",
+      "new": "New",
+      "organic": "Organic",
+      "seasonal": "Seasonal",
+      "hybrid": "Hybrid",
+      "handcrafted": "Handcrafted"
+    },
+    "items": {
+      "fertilizer1": "NPK Complex Fertilizer",
+      "fertilizer2": "Urea Fertilizer",
+      "fertilizer3": "Organic Compost",
+      "fertilizer4": "Micronutrient Mix",
+      "seed1": "Hybrid Wheat Seeds",
+      "seed2": "Vegetable Seed Kit",
+      "seed3": "Organic Herb Seeds",
+      "seed4": "Flower Seeds Mix",
+      "pesticide1": "Insect Control Spray",
+      "pesticide2": "Fungicide Solution",
+      "pesticide3": "Weed Control",
+      "pesticide4": "Organic Pest Control",
+      "organic1": "Vermicompost",
+      "organic2": "Neem Cake",
+      "organic3": "Organic Plant Food",
+      "organic4": "Bio Fertilizer",
+      "tool1": "Garden Tool Set",
+      "tool2": "Pruning Shears",
+      "tool3": "Power Tiller",
+      "tool4": "Hand Cultivator",
+      "irrigation1": "Drip Irrigation Kit",
+      "irrigation2": "Sprinkler System",
+      "irrigation3": "Watering Can",
+      "irrigation4": "Irrigation Controller",
+      "hydroponics1": "Hydroponics Starter Kit",
+      "hydroponics2": "Nutrient Solution",
+      "hydroponics3": "Growing Medium",
+      "hydroponics4": "Complete Hydroponics System",
+      "greenhouse1": "Mini Greenhouse",
+      "greenhouse2": "Greenhouse Structure",
+      "greenhouse3": "Greenhouse Accessories",
+      "greenhouse4": "Shade Net"
+    },
+    "localProducts": {
+      "title": "Local Banaras Products",
+      "subtitle": "Discover agricultural products unique to the Banaras region",
+      "item1": {
+        "title": "Banarasi Vegetables",
+        "description": "Locally grown vegetable varieties unique to the Banaras region"
+      },
+      "item2": {
+        "title": "Ganga Basin Soil",
+        "description": "Rich, fertile soil from the Ganga river basin, perfect for cultivation"
+      },
+      "item3": {
+        "title": "Traditional Farming Tools",
+        "description": "Handcrafted traditional farming tools used by local farmers"
+      }
+    },
+    "seasonal": {
+      "title": "Seasonal Products",
+      "subtitle": "Products specially selected for the current growing season",
+      "viewAll": "View All Seasonal Products",
+      "product1": "Monsoon Special Seeds",
+      "product2": "Summer Crop Fertilizer",
+      "product3": "Seasonal Pest Control",
+      "product4": "Weather Protection Nets"
+    },
+    "cta": {
+      "title": "Need Help Selecting Products?",
+      "description": "Our agricultural experts can help you choose the right products for your specific needs.",
+      "primaryButton": "Contact Us",
+      "secondaryButton": "View Catalog"
+    }
+  },
+  "servicesPage": {
+    "title": "Our Services",
+    "subtitle": "Professional agricultural and gardening services tailored to your needs",
+    "contactButton": "Contact for Services",
+    "learnMoreButton": "Learn More",
+    "categoriesTitle": "Specialized Services",
+    "categoriesSubtitle": "We offer a wide range of specialized services to meet all your agricultural and gardening needs",
+    "categories": {
+      "terrace": "Terrace Gardening",
+      "professional": "Professional Gardening",
+      "hydroponics": "Hydroponics",
+      "greenhouse": "Greenhouse",
+      "vegetable": "Vegetable Farming",
+      "lawn": "Lawn & Grass"
+    },
+    "terrace": {
+      "title": "Terrace Garden Setup",
+      "description": "Transform your terrace into a lush, productive garden space with our complete terrace gardening solutions. Our experts will design and implement a garden that suits your space and preferences.",
+      "features": [
+        "Custom design based on your terrace space and sunlight conditions",
+        "Selection of suitable plants for terrace conditions",
+        "Installation of lightweight, durable containers and planters",
+        "Setup of efficient irrigation and drainage systems",
+        "Ongoing maintenance and support services"
+      ]
+    },
+    "professional": {
+      "title": "Professional Gardening Services",
+      "description": "Our team of experienced gardeners provides comprehensive professional gardening services for homes, businesses, and institutions in Banaras and surrounding areas.",
+      "features": [
+        "Complete garden design and implementation",
+        "Regular maintenance and seasonal care",
+        "Plant health monitoring and treatment",
+        "Specialized care for ornamental plants and trees",
+        "Landscape renovation and enhancement"
+      ]
+    },
+    "hydroponics": {
+      "title": "Hydroponics System Setup",
+      "description": "Embrace modern farming techniques with our hydroponics system setup services. We design, install, and maintain soilless growing systems for efficient and clean cultivation.",
+      "features": [
+        "Custom hydroponic system design for your space",
+        "Complete installation and setup services",
+        "Training on system operation and maintenance",
+        "Regular monitoring and technical support",
+        "Nutrient solution formulation and supply"
+      ]
+    },
+    "greenhouse": {
+      "title": "Greenhouse Setup and Management",
+      "description": "Create the perfect growing environment with our greenhouse setup services. We offer customized greenhouse solutions for year-round cultivation regardless of external weather conditions.",
+      "features": [
+        "Custom greenhouse design and construction",
+        "Climate control system installation",
+        "Automated irrigation and fertigation systems",
+        "Crop selection and growing guidance",
+        "Ongoing management and maintenance services"
+      ]
+    }
+  },
+  "aboutPage": {
+    "title": "About AgriShop",
+    "subtitle": "Your trusted partner in agriculture since 1995",
+    "storyTitle": "Our Story",
+    "storyParagraph1": "Founded in 1995 in the heart of Banaras, AgriShop began as a small store serving local farmers with essential agricultural supplies. Over the years, we have grown into a comprehensive agricultural solution provider while maintaining our commitment to quality and customer service.",
+    "storyParagraph2": "Located near the fertile banks of the Ganges, we understand the unique agricultural needs of the Banaras region. Our team consists of agricultural experts, experienced gardeners, and knowledgeable staff who are passionate about helping farmers and gardening enthusiasts achieve the best results.",
+    "storyParagraph3": "Today, AgriShop is proud to be a government-approved and licensed agricultural shop offering a wide range of products and services, from traditional farming supplies to modern hydroponics and greenhouse solutions.",
+    "missionTitle": "Our Mission",
+    "missionText": "To provide farmers and gardening enthusiasts with high-quality agricultural products and expert services that promote sustainable farming practices and enhance productivity.",
+    "visionTitle": "Our Vision",
+    "visionText": "To be the leading agricultural solution provider in Eastern Uttar Pradesh, known for innovation, quality, and commitment to sustainable farming practices.",
+    "valuesTitle": "Our Values",
+    "valuesDescription": "These core principles guide everything we do at AgriShop",
+    "values": [
+      {
+        "title": "Quality",
+        "description": "We are committed to providing only the highest quality products and services to our customers."
+      },
+      {
+        "title": "Sustainability",
+        "description": "We promote sustainable farming practices that protect the environment and ensure long-term productivity."
+      },
+      {
+        "title": "Innovation",
+        "description": "We continuously seek innovative solutions to address the evolving challenges in agriculture."
+      },
+      {
+        "title": "Customer Focus",
+        "description": "We prioritize understanding and meeting the unique needs of each customer."
+      }
+    ],
+    "achievementsTitle": "Our Achievements",
+    "achievementsDescription": "Milestones we've reached in our journey",
+    "achievements": [
+      {
+        "title": "Government Recognition",
+        "description": "Received official recognition from the UP State Agricultural Department for our contribution to promoting modern farming techniques."
+      },
+      {
+        "title": "10,000+ Farmers Served",
+        "description": "Proud to have served over 10,000 farmers and gardening enthusiasts across Banaras and surrounding regions."
+      },
+      {
+        "title": "Sustainable Farming Initiative",
+        "description": "Successfully implemented sustainable farming initiatives in 50+ villages around Banaras."
+      }
+    ],
+    "teamTitle": "Our Team",
+    "teamDescription": "Meet the experts behind AgriShop",
+    "team": {
+      "member1": {
+        "name": "Rajesh Kumar",
+        "role": "Founder & Agricultural Expert",
+        "bio": "With over 30 years of experience in agriculture, Rajesh leads our team with his extensive knowledge and passion."
+      },
+      "member2": {
+        "name": "Priya Singh",
+        "role": "Horticulture Specialist",
+        "bio": "Priya specializes in ornamental plants and terrace gardening solutions."
+      },
+      "member3": {
+        "name": "Amit Patel",
+        "role": "Hydroponics Expert",
+        "bio": "Amit brings modern farming techniques to traditional agriculture with his expertise in hydroponics."
+      },
+      "member4": {
+        "name": "Sunita Verma",
+        "role": "Customer Relations Manager",
+        "bio": "Sunita ensures that every customer receives personalized attention and solutions."
+      }
+    },
+    "partnersTitle": "Our Partners",
+    "partnersDescription": "We collaborate with leading organizations in the agricultural sector",
+    "certificationsTitle": "Government Certifications",
+    "certificationsDescription": "AgriShop is proud to be recognized and certified by various government bodies, ensuring that we meet the highest standards in agricultural products and services.",
+    "certifications": [
+      "Licensed by the Department of Agriculture, Uttar Pradesh",
+      "Certified Seed Distributor by the National Seeds Corporation",
+      "Authorized Dealer for Subsidized Fertilizers",
+      "Member of the Agricultural Technology Management Agency (ATMA)",
+      "Certified Organic Products Retailer"
+    ],
+    "certificationsButton": "View Certificates",
+    "ctaTitle": "Ready to Transform Your Agricultural Practices?",
+    "ctaDescription": "Visit our shop in Banaras or contact us today to explore our products and services.",
+    "ctaButton": "Contact Us"
+  },
+  "contactPage": {
+    "title": "Contact Us",
+    "subtitle": "We're here to help with all your agricultural needs",
+    "phone": "Phone",
+    "email": "Email",
+    "address": "Address",
+    "addressLine1": "123 Agri Road, Lanka",
+    "addressLine2": "Varanasi, Uttar Pradesh 221005",
+    "hours": "Business Hours",
+    "weekdayHours": "Monday-Saturday: 9:00 AM - 7:00 PM",
+    "weekendHours": "Sunday: 10:00 AM - 2:00 PM",
+    "formTitle": "Send Us a Message",
+    "name": "Your Name",
+    "subject": "Subject",
+    "message": "Your Message",
+    "send": "Send Message",
+    "sending": "Sending...",
+    "thankYou": "Thank You!",
+    "formSuccess": "Your message has been sent successfully. We'll get back to you soon.",
+    "sendAnother": "Send Another Message",
+    "findUs": "Find Us",
+    "directions": "How to Reach Us",
+    "directionsList": [
+      "Located near Lanka Gate, Banaras Hindu University",
+      "10 minutes from Varanasi Cantt Railway Station",
+      "15 minutes from Lal Bahadur Shastri International Airport",
+      "Landmark: Opposite to Bank of Baroda"
+    ],
+    "faqTitle": "Frequently Asked Questions",
+    "faqDescription": "Find answers to common questions about our products and services",
+    "faqs": [
+      {
+        "question": "Do you offer home delivery?",
+        "answer": "Yes, we offer home delivery for orders above ₹500 within Varanasi city limits. For areas outside the city, delivery charges may apply."
+      },
+      {
+        "question": "How can I check if a product is in stock?",
+        "answer": "You can call us at our phone number or send us a WhatsApp message to check product availability."
+      },
+      {
+        "question": "Do you provide installation services for irrigation systems?",
+        "answer": "Yes, we provide professional installation services for all irrigation systems purchased from our shop."
+      },
+      {
+        "question": "Can you help with soil testing?",
+        "answer": "Yes, we offer soil testing services to help you understand the composition and nutrient content of your soil."
+      }
+    ],
+    "selectSubject": "Select a subject",
+    "subjects": {
+      "products": "Product Inquiry",
+      "services": "Service Inquiry",
+      "pricing": "Pricing Information",
+      "support": "Technical Support",
+      "other": "Other"
+    },
+    "inquiryType": "Inquiry Type",
+    "inquiryTypes": {
+      "general": "General Inquiry",
+      "product": "Product Specific",
+      "service": "Service Specific",
+      "business": "Business Collaboration"
+    }
+  },
+  "whatsapp": {
+    "welcomeMessage": "Hello! 👋 Welcome to AgriShop. How can we help you today?",
+    "placeholderText": "Type your message...",
+    "sendButtonText": "Send",
+    "businessName": "AgriShop Support",
+    "businessHours": "Available 9 AM - 6 PM"
+  }
+}
