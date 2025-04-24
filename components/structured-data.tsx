@@ -1,12 +1,111 @@
-import Script from "next/script"
-
-interface FAQItem {
-  question: string
-  answer: string
+interface LocalBusinessProps {
+  name: string
+  description: string
+  address: string
+  telephone: string
+  email: string
+  url: string
+  geo?: {
+    latitude: string
+    longitude: string
+  }
+  areaServed?: string[]
 }
 
-export function FAQStructuredData({ questions }: { questions: FAQItem[] }) {
-  const faqSchema = {
+export function LocalBusinessStructuredData({
+  name,
+  description,
+  address,
+  telephone,
+  email,
+  url,
+  geo,
+  areaServed,
+}: LocalBusinessProps) {
+  const addressParts = address.split(", ")
+
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    name,
+    description,
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: addressParts[0] || "",
+      addressLocality: addressParts[1] || "",
+      addressRegion: addressParts[2]?.split(" ")[0] || "",
+      postalCode: addressParts[2]?.split(" ")[1] || "",
+      addressCountry: "IN",
+    },
+    geo: geo
+      ? {
+          "@type": "GeoCoordinates",
+          latitude: geo.latitude,
+          longitude: geo.longitude,
+        }
+      : undefined,
+    areaServed: areaServed?.map((area) => ({
+      "@type": "City",
+      name: area,
+    })),
+    telephone,
+    email,
+    url,
+    openingHoursSpecification: [
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        opens: "09:00",
+        closes: "19:00",
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: ["Sunday"],
+        opens: "10:00",
+        closes: "14:00",
+      },
+    ],
+  }
+
+  return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
+}
+
+interface ProductProps {
+  name: string
+  description: string
+  image: string
+  price: string
+  url: string
+}
+
+export function ProductStructuredData({ name, description, image, price, url }: ProductProps) {
+  const structuredData = {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    name,
+    description,
+    image,
+    offers: {
+      "@type": "Offer",
+      url,
+      priceCurrency: "INR",
+      price: price.replace("₹", ""),
+      availability: "https://schema.org/InStock",
+    },
+  }
+
+  return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
+}
+
+interface FAQProps {
+  questions: {
+    question: string
+    answer: string
+  }[]
+}
+
+export function FAQStructuredData({ questions }: FAQProps) {
+  const structuredData = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
     mainEntity: questions.map((q) => ({
@@ -19,143 +118,5 @@ export function FAQStructuredData({ questions }: { questions: FAQItem[] }) {
     })),
   }
 
-  return (
-    <Script
-      id="faq-schema"
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-    />
-  )
-}
-
-export function LocalBusinessStructuredData({
-  name,
-  image,
-  telephone,
-  address,
-  url,
-  geo,
-  openingHours,
-}: {
-  name: string
-  image: string
-  telephone: string
-  address: {
-    streetAddress: string
-    addressLocality: string
-    addressRegion: string
-    postalCode: string
-    addressCountry: string
-  }
-  url: string
-  geo: {
-    latitude: string
-    longitude: string
-  }
-  openingHours: string[]
-}) {
-  const businessSchema = {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    name,
-    image,
-    telephone,
-    address: {
-      "@type": "PostalAddress",
-      ...address,
-    },
-    url,
-    geo: {
-      "@type": "GeoCoordinates",
-      ...geo,
-    },
-    openingHoursSpecification: openingHours.map((hours) => ({
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: hours.split(" ")[0],
-      opens: hours.split(" ")[1].split("-")[0],
-      closes: hours.split(" ")[1].split("-")[1],
-    })),
-  }
-
-  return (
-    <Script
-      id="business-schema"
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(businessSchema) }}
-    />
-  )
-}
-
-export function ProductStructuredData({
-  name,
-  image,
-  description,
-  sku,
-  brand,
-  price,
-  currency,
-  availability,
-  url,
-  reviews,
-}: {
-  name: string
-  image: string
-  description: string
-  sku: string
-  brand: string
-  price: number
-  currency: string
-  availability: string
-  url: string
-  reviews?: {
-    author: string
-    datePublished: string
-    reviewBody: string
-    reviewRating: {
-      ratingValue: number
-    }
-  }[]
-}) {
-  const productSchema = {
-    "@context": "https://schema.org",
-    "@type": "Product",
-    name,
-    image,
-    description,
-    sku,
-    brand: {
-      "@type": "Brand",
-      name: brand,
-    },
-    offers: {
-      "@type": "Offer",
-      price,
-      priceCurrency: currency,
-      availability: `https://schema.org/${availability}`,
-      url,
-    },
-    ...(reviews && {
-      review: reviews.map((review) => ({
-        "@type": "Review",
-        author: {
-          "@type": "Person",
-          name: review.author,
-        },
-        datePublished: review.datePublished,
-        reviewBody: review.reviewBody,
-        reviewRating: {
-          "@type": "Rating",
-          ratingValue: review.reviewRating.ratingValue,
-        },
-      })),
-    }),
-  }
-
-  return (
-    <Script
-      id="product-schema"
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }}
-    />
-  )
+  return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
 }

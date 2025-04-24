@@ -1,0 +1,39 @@
+{
+  "home": {
+    "title": "AgriShop - Your Complete Agriculture Solution in Banaras & Mughalsarai",
+    "description": "Government approved agriculture shop providing high-quality fertilizers, seeds, pesticides, and gardening solutions in Banaras and Mughalsarai. Best farming supplies in Eastern UP.",
+    "keywords": "agriculture shop Banaras, fertilizer shop Banaras, organic farming Banaras, seeds Banaras, pesticides Mughalsarai, farm equipment Banaras, dairy farming Banaras, कृषि सलाह बनारस, agriculture suppliers in Banaras"
+  },
+  "products": {
+    "title": "Agricultural Products & Supplies | Best Farm Equipment in Banaras & Mughalsarai",
+    "description": "Explore our wide range of agricultural products including fertilizers, seeds, pesticides, and organic farming materials in Banaras and Mughalsarai. Quality farm supplies at competitive prices.",
+    "keywords": "buy organic fertilizer Banaras, agriculture supplies Mughalsarai, seeds shop Banaras, pesticides for wheat Banaras, farm equipment dealers Banaras, कृषि यंत्र मुगलसराय, बीज विक्रेता मुगलसराय, fertilizer shop in Mughalsarai"
+  },
+  "services": {
+    "title": "Professional Agricultural Services in Banaras & Mughalsarai | AgriShop",
+    "description": "Expert agricultural services including terrace gardening, professional gardening, hydroponics, and greenhouse setup in Banaras and Mughalsarai. Soil testing and farm consultancy available.",
+    "keywords": "terrace gardening Banaras, hydroponics Mughalsarai, greenhouse setup Banaras, professional gardening services Banaras, agricultural consultants Banaras, soil testing lab Banaras, smart farming Banaras, precision agriculture Mughalsarai"
+  },
+  "about": {
+    "title": "About AgriShop | Leading Agriculture Shop in Banaras & Mughalsarai Since 1995",
+    "description": "Learn about AgriShop, a government-approved agriculture shop serving farmers and gardening enthusiasts in Banaras and Mughalsarai since 1995. Trusted by 10,000+ farmers in Eastern UP.",
+    "keywords": "agriculture shop Banaras, government approved fertilizer shop Mughalsarai, organic farming Banaras, agricultural experts Banaras, sustainable agriculture Mughalsarai, farm-to-fork Banaras, agribusiness Banaras"
+  },
+  "contact": {
+    "title": "Contact AgriShop | Agriculture Experts in Banaras & Mughalsarai",
+    "description": "Contact our agricultural experts in Banaras and Mughalsarai for all your farming and gardening needs. Visit our shops or reach out online for personalized assistance.",
+    "keywords": "agriculture shop contact Banaras, fertilizer shop Mughalsarai, agricultural consultants Banaras, farming experts Banaras, कृषि सलाह बनारस, best fertilizer shop near me Banaras"
+  },
+  "locations": {
+    "banaras": {
+      "title": "AgriShop Banaras | Best Agriculture Shop in Varanasi",
+      "description": "Visit our Banaras store for high-quality fertilizers, seeds, pesticides, and gardening solutions. Located near Lanka Gate, serving farmers since 1995.",
+      "keywords": "agriculture shop Banaras, fertilizer shop in Banaras, organic farming Banaras, कृषि सलाह बनारस, best fertilizer shop near me Banaras, खेती की दवा बनारस, Banaras agriculture market, buy organic fertilizer online Banaras"
+    },
+    "mughalsarai": {
+      "title": "AgriShop Mughalsarai | Premier Agriculture Shop in Chandauli",
+      "description": "Visit our Mughalsarai store for premium agricultural supplies, fertilizers, seeds, and farm equipment. Serving local farmers with quality products since 1995.",
+      "keywords": "agriculture suppliers Mughalsarai, fertilizer shop in Mughalsarai, बीज विक्रेता मुगलसराय, farm equipment dealers Mughalsarai, कृषि यंत्र मुगलसराय, Mughalsarai fertilizer price, soil fertility Mughalsarai"
+    }
+  }
+}

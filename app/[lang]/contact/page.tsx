@@ -1,11 +1,12 @@
 import Image from "next/image"
 import { getDictionary, getSEODictionary } from "../dictionaries"
 import { Button } from "@/components/ui/button"
+import { Input } from "@/components/ui/input"
+import { Textarea } from "@/components/ui/textarea"
 import { Phone, Mail, Clock, MapPin } from "lucide-react"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import SEOMeta from "@/components/seo-meta"
 import { FAQStructuredData } from "@/components/structured-data"
-import ContactForm from "@/components/contact-form"
 
 export default async function ContactPage({
   params,
@@ -56,13 +57,6 @@ export default async function ContactPage({
       messagePlaceholder: dict.contactPage?.form?.messagePlaceholder || "Type your message here...",
       submit: dict.contactPage?.form?.submit || "Send Message",
     },
-    validation: {
-      required: dict.contactPage?.validation?.required || "This field is required",
-      invalidEmail: dict.contactPage?.validation?.invalidEmail || "Please enter a valid email address",
-      minLength: dict.contactPage?.validation?.minLength || "This field must be at least {min} characters",
-    },
-    success: dict.contactPage?.success || "Your message has been sent successfully. We'll get back to you soon!",
-    error: dict.contactPage?.error || "There was an error sending your message. Please try again.",
     location: {
       title: dict.contactPage?.location?.title || "Our Location",
       address: dict.contactPage?.location?.address || "123 Agri Road, Lanka, Varanasi, Uttar Pradesh 221005",
@@ -106,13 +100,6 @@ export default async function ContactPage({
     question: q.question,
     answer: q.answer,
   }))
-
-  const formDictionary = {
-    form: contactPage.form,
-    validation: contactPage.validation,
-    success: contactPage.success,
-    error: contactPage.error,
-  }
 
   return (
     <>
@@ -177,7 +164,46 @@ export default async function ContactPage({
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               {/* Contact Form */}
-              <ContactForm dictionary={formDictionary} />
+              <div className="bg-white p-6 md:p-8 rounded-lg shadow-sm">
+                <h2 className="text-2xl font-bold mb-6">{contactPage.form.title}</h2>
+                <form className="space-y-4">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div className="space-y-2">
+                      <label htmlFor="name" className="text-sm font-medium">
+                        {contactPage.form.name}
+                      </label>
+                      <Input id="name" placeholder={contactPage.form.namePlaceholder} />
+                    </div>
+                    <div className="space-y-2">
+                      <label htmlFor="email" className="text-sm font-medium">
+                        {contactPage.form.email}
+                      </label>
+                      <Input id="email" type="email" placeholder={contactPage.form.emailPlaceholder} />
+                    </div>
+                  </div>
+                  <div className="space-y-2">
+                    <label htmlFor="phone" className="text-sm font-medium">
+                      {contactPage.form.phone}
+                    </label>
+                    <Input id="phone" placeholder={contactPage.form.phonePlaceholder} />
+                  </div>
+                  <div className="space-y-2">
+                    <label htmlFor="subject" className="text-sm font-medium">
+                      {contactPage.form.subject}
+                    </label>
+                    <Input id="subject" placeholder={contactPage.form.subjectPlaceholder} />
+                  </div>
+                  <div className="space-y-2">
+                    <label htmlFor="message" className="text-sm font-medium">
+                      {contactPage.form.message}
+                    </label>
+                    <Textarea id="message" placeholder={contactPage.form.messagePlaceholder} rows={5} />
+                  </div>
+                  <Button type="submit" className="w-full bg-green-700 hover:bg-green-800">
+                    {contactPage.form.submit}
+                  </Button>
+                </form>
+              </div>
 
               {/* Map and Location */}
               <div className="space-y-6">
